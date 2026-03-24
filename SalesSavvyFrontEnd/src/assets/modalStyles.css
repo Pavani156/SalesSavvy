@@ -1,0 +1,142 @@
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 6, 23, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content container */
+  .modal-content {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 20px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    box-shadow: 0 24px 80px rgba(0, 171, 228, 0.22);
+    animation: fadeIn 0.28s ease-in-out both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Form styling */
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-form input,
+  .modal-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .modal-form textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  /* Buttons */
+  .modal-content button {
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #00ABE4, #0EA5E9);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 140ms ease, filter 140ms ease, opacity 140ms ease;
+  }
+  
+  .modal-content button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.04);
+  }
+  
+  .modal-content button:last-child {
+    background: rgba(15, 23, 42, 0.10);
+    color: #0F172A;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+  }
+  
+  .modal-content button:last-child:hover {
+    background: rgba(15, 23, 42, 0.14);
+    transform: translateY(-1px);
+  }
+  
+  /* Product details */
+  .product-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .product-details img {
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .product-details div {
+    flex: 1;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .modal-form-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .business-response-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+ .full-products{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+gap:25px;
+
+ }
+ .product-details-info{
+  display: flex;
+  flex-direction: column;
+
+}
